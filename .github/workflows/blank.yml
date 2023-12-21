@@ -16,7 +16,8 @@ jobs:
       - name: Trigger Common Workflow
         uses: actions/github-script@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.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
+ }}
           script: |
             const response = await github.repos.createDispatchEvent({
               owner: 'gulshkr',
